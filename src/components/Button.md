@@ -1,7 +1,7 @@
 A very simple button.
 
 ```jsx
-import Button from "./Button";
+import { Button } from "blackbox-react";
 
-<Button text="Submit" />
+<Button text="I MUST BE DREAMING" />
 ```

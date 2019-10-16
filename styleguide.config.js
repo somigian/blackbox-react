@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   webpackConfig: {
     module: {
@@ -11,5 +13,8 @@ module.exports = {
     }
   },
   title: "Blacbox React Components Library",
-  styleguideDir: "dist-docs"
+  styleguideDir: "dist-docs",
+  moduleAliases: {
+    "blackbox-react": path.resolve(__dirname, "src")
+  }
 };
