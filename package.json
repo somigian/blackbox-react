@@ -1,0 +1,54 @@
+{
+  "name": "blackbox-react",
+  "version": "1.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "browser": "lib/index.umd.js",
+  "module": "lib/index.es.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "start": "styleguidist server",
+    "test": "jest",
+    "build": "rollup -c",
+    "prepublishOnly": "rm -rf lib && npm run build",
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "docs:build": "styleguidist build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@emotion/core": "10.x",
+    "@emotion/styled": "10.x",
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "@testing-library/react": "^9.3.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.21",
+    "jest": "^24.9.0",
+    "jest-emotion": "^10.0.17",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-styleguidist": "^9.1.16",
+    "rollup": "^1.24.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-uglify": "^6.0.3",
+    "webpack": "^4.41.2"
+  },
+  "dependencies": {
+    "babel-plugin-module-resolver": "^3.2.0"
+  }
+}
