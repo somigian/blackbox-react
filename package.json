@@ -1,6 +1,6 @@
 {
   "name": "blackbox-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "browser": "lib/index.umd.js",
@@ -34,10 +34,21 @@
     "@testing-library/react": "^9.3.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.21",
+    "babel-register": "^6.26.0",
+    "canvas": "^2.6.0",
+    "chai": "^4.2.0",
+    "enzyme": "^3.10.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "husky": "^3.0.9",
     "jest": "^24.9.0",
     "jest-emotion": "^10.0.17",
+    "jsdom": "^15.2.0",
+    "prettier": "^1.18.2",
+    "prettier-standard": "^15.0.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
     "react-styleguidist": "^9.1.16",
     "rollup": "^1.24.0",
     "rollup-plugin-babel": "^4.3.3",
@@ -46,9 +57,20 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-terser": "^5.1.2",
     "rollup-plugin-uglify": "^6.0.3",
+    "standard": "^14.3.1",
     "webpack": "^4.41.2"
   },
   "dependencies": {
-    "babel-plugin-module-resolver": "^3.2.0"
+    "babel-plugin-module-resolver": "^3.2.0",
+    "emotion": "^9.2.6",
+    "emotion-server": "^9.2.6",
+    "lodash": "^4.17.4",
+    "minimal.css": "^1.0.1",
+    "moment": "^2.19.1",
+    "prop-types": "^15.5.8",
+    "query-string": "4.3.4",
+    "react-modal": "^3.2.1",
+    "react-onclickoutside": "^6.7.1",
+    "react-slick": "^0.18.1"
   }
 }
