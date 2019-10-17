@@ -16,7 +16,7 @@ __withStyles__ will inject 2 props into our component that we can use
 
 **classNames** - these are class strings that you can attach directly to HTML elements e.g. if your styles function returns an object with keys `title` and `body`, your classNames prop will also be an object with keys `title` and `body`
 
-**styles** - these are the style defintions that can be forwarded onto other React components to be processed, such as for customising styles of Constructicon components. As above, the styles prop will have the same keys as the object returned from your styles function.
+**styles** - these are the style defintions that can be forwarded onto other React components to be processed, such as for customising styles of components. As above, the styles prop will have the same keys as the object returned from your styles function.
 
 ### Example
 

@@ -5,6 +5,8 @@
 Pass an onChange callback to be notified of changes
 
 ```
+import { InputSelect } from "blackbox-react";
+
 initialState = { gender: '' };
 
 <div>
@@ -27,6 +29,8 @@ initialState = { gender: '' };
 Includes support for `<optgroup>`
 
 ```
+import { InputSelect } from "blackbox-react";
+
 initialState = { event: '' };
 
 <div>

@@ -3,7 +3,7 @@
 **Standard Use**
 
 ```
-import { Container } from "blackbox-react";
+import { Container, Flippy } from "blackbox-react";
 
 <Container width={16} spacing={1}>
   <Flippy
@@ -25,7 +25,7 @@ Apply a custom styles object to alter the look. Available elements are:
 - `back` - Content seen on hover
 
 ```
-import { Flippy } from "blackbox-react";
+import { Container, Flippy } from "blackbox-react";
 
 <Container width={16} spacing={1}>
   <Flippy

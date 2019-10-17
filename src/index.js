@@ -16,6 +16,7 @@ export { default as Icon } from "components/icon";
 export { default as Image } from "components/image";
 export { default as InputDate } from "components/input-date";
 export { default as InputField } from "components/input-field";
+export { default as InputFile } from "components/input-file";
 export { default as InputSearch } from "components/input-search";
 export { default as InputSearchResult } from "components/input-search-result";
 export { default as InputSelect } from "components/input-select";

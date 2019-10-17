@@ -5,7 +5,7 @@
 Links to the required social profiles
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, ButtonShare } from "blackbox-react";
 
 <ButtonGroup align='center'>
   <ButtonShare type='facebook' href='http://facebook.com' />
@@ -20,7 +20,7 @@ import { ButtonGroup } from "blackbox-react";
 Share the current page on supported social networks or via email
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, ButtonShare } from "blackbox-react";
 
 <ButtonGroup align='center'>
   <ButtonShare type='facebook' share />
@@ -40,5 +40,7 @@ import { ButtonGroup } from "blackbox-react";
 Takes styles the same as a `Button` component
 
 ```
+import { ButtonShare } from "blackbox-react";
+
 <ButtonShare type='facebook' share styles={{ backgroundColor: 'blue' }} />
 ```

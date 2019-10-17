@@ -5,6 +5,8 @@
 Pass an onSubmit callback to be notified of changes
 
 ```
+import { Form, InputField, InputSelect } from "blackbox-react";
+
 initialState = {
   email: '',
   password: '',
@@ -104,6 +106,8 @@ handleSubmit = (e) => {
 **With additional form actions**
 
 ```
+import { Heading, Button, Form, InputField } from "blackbox-react";
+
 initialState = {
   email: '',
   password: '',

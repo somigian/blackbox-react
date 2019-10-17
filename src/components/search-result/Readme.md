@@ -5,6 +5,8 @@
 Provides a list item suited for a search results listing.
 
 ```
+import { SearchResult } from "blackbox-react";
+
 <SearchResult
   cta='Support'
   image='http://placehold.it/100x100'

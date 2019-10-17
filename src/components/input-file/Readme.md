@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { InputFile } from "blackbox-react";
+
 <InputFile
   label='Upload a file'
   name='file'
@@ -13,6 +15,8 @@
 **Multiple files**
 
 ```
+import { InputFile } from "blackbox-react";
+
 <InputFile
   label='Upload multiple files'
   name='files'

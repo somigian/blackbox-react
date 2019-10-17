@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 <Leaderboard>
   <LeaderboardItem
     href='http://google.com'
@@ -18,6 +20,8 @@
 **Custom Link Component**
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 <Leaderboard>
   <LeaderboardItem
     href='http://google.com'
@@ -43,6 +47,8 @@ Apply a custom styles object to alter the look. Available elements are:
 - `amount` - the amount
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 const styles = {
   image: {
     height: '5em',

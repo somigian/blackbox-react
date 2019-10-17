@@ -5,6 +5,8 @@
 Used to apply consistent padding to sections of content
 
 ```
+import { Section } from "blackbox-react";
+
 <Section>
   Content here
 </Section>
@@ -15,6 +17,8 @@ Used to apply consistent padding to sections of content
 Adjust the spacing by passing in a spacing object or a number
 
 ```
+import { Section } from "blackbox-react";
+
 <Section spacing={{ x: 3, y: 1 }}>
   Content here
 </Section>
@@ -25,6 +29,8 @@ Adjust the spacing by passing in a spacing object or a number
 Set the background and/or foreground colors of the section to one of theme's colors
 
 ```
+import { Section } from "blackbox-react";
+
 <Section background='primary' foreground='light'>
   Content here
 </Section>
@@ -35,6 +41,8 @@ Set the background and/or foreground colors of the section to one of theme's col
 Set the border width, border color and/or border radius
 
 ```
+import { Section } from "blackbox-react";
+
 <Section borderWidth={3} radius='medium'>
   Content here
 </Section>
@@ -45,6 +53,8 @@ Set the border width, border color and/or border radius
 Pass in custom style rules to be applied to the section
 
 ```
+import { Section } from "blackbox-react";
+
 <Section styles={{ backgroundColor: 'rebeccapurple', color: 'white' }}>
   Content here
 </Section>

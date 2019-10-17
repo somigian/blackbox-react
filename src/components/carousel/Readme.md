@@ -7,6 +7,8 @@ Depends on [react-slick](https://github.com/akiran/react-slick). See [README](ht
 **Standard Use**
 
 ```
+import { Carousel } from "blackbox-react";
+
 <Carousel>
   <div>Slide 1</div>
   <div>Slide 2</div>
@@ -16,6 +18,8 @@ Depends on [react-slick](https://github.com/akiran/react-slick). See [README](ht
 **Autoplay**
 
 ```
+import { Carousel } from "blackbox-react";
+
 <Carousel dots autoplay arrows={false}>
   <div>Slide 1</div>
   <div>Slide 2</div>
@@ -27,6 +31,8 @@ Depends on [react-slick](https://github.com/akiran/react-slick). See [README](ht
 Pass in custom style rules to be applied to the carousel
 
 ```
+import { Carousel } from "blackbox-react";
+
 <Carousel styles={{ backgroundColor: 'whitesmoke' }}>
   <div>Slide 1</div>
   <div>Slide 2</div>

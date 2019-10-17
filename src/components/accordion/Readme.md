@@ -3,7 +3,7 @@
 **Standard Use**
 
 ```
-import { RichText } from "blackbox-react";
+import { Accordion, RichText } from "blackbox-react";
 
 <div>
   <Accordion title='Lorem ipsum dolor sit amet, consectetur adipiscing elit?'>
@@ -34,6 +34,8 @@ import { RichText } from "blackbox-react";
 Open the accordion by default
 
 ```
+import { Accordion } from "blackbox-react";
+
 <Accordion title='Question here?' toggled>
   <p>Answer here...</p>
 </Accordion>
@@ -44,6 +46,8 @@ Open the accordion by default
 Set the active color of the accordion for the icon and borders
 
 ```
+import { Accordion } from "blackbox-react";
+
 <Accordion title='Question here?' color='tertiary'>
   <p>Answer here...</p>
 </Accordion>
@@ -54,6 +58,8 @@ Set the active color of the accordion for the icon and borders
 Set the font style for the title
 
 ```
+import { Accordion } from "blackbox-react";
+
 <Accordion title='Question here?' font='body'>
   <p>Answer here...</p>
 </Accordion>
@@ -64,7 +70,7 @@ Set the font style for the title
 Set the open and close icon or text
 
 ```
-import { RichText } from "blackbox-react";
+import { Accordion, RichText } from "blackbox-react";
 
 const opened = 'Close';
 const closed = 'Open';
@@ -81,6 +87,8 @@ const closed = 'Open';
 Remove the border from the accordion
 
 ```
+import { Accordion } from "blackbox-react";
+
 <Accordion title='Question here?' border={false}>
   <p>Answer here...</p>
 </Accordion>
@@ -99,6 +107,8 @@ Apply a custom styles object to alter the look. Available elements are:
 For example:
 
 ```
+import { Accordion } from "blackbox-react";
+
 const styles = {
   head: {
     padding: '1.5em',

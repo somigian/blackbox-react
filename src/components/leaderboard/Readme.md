@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 const leader = {
   href: 'http://google.com',
   image: 'http://placehold.it/250x250',
@@ -33,6 +35,8 @@ const leaders = [ leader, leader, leader, leader, leader, leader ];
 Set the background and foreground color of the leaderboard
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 const leader = {
   href: 'http://google.com',
   image: 'http://placehold.it/250x250',
@@ -62,6 +66,8 @@ const leaders = [ leader, leader, leader, leader, leader, leader ];
 Set the leaderboard to break into columns at certain breakpoints
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 const leader = {
   href: 'http://google.com',
   image: 'http://placehold.it/250x250',
@@ -118,6 +124,8 @@ Apply a custom styles object to alter the look. Available elements are:
 - `leaders` - Applied to the leaders listing
 
 ```
+import { Leaderboard, LeaderboardItem } from "blackbox-react";
+
 const leader = {
   href: 'http://google.com',
   image: 'http://placehold.it/250x250',

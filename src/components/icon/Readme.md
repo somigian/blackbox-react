@@ -262,6 +262,8 @@
 **Button**
 
 ```
+import { ButtonGroup, Button, Icon } from "blackbox-react";
+
 <ButtonGroup>
   <Button>
     <span>Proceed</span>

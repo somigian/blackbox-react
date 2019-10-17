@@ -1,10 +1,12 @@
-__NumberToWords__ is a wrapper component around the constructicon `numberToWords` function
+__NumberToWords__ is a wrapper component around the `numberToWords` function
 
 It converts a number between 0 and 1,000,000,000 to words and forwards the props to the wrapping element
 
 # Example
 
 ```
+import { NumberToWords, Heading } from "blackbox-react";
+
 <div>
   <NumberToWords number={0} />
 

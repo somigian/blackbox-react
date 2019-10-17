@@ -3,12 +3,16 @@
 **Standard Use**
 
 ```
+import { Label } from "blackbox-react";
+
 <Label>My Field</Label>
 ```
 
 **Required**
 
 ```
+import { Label } from "blackbox-react";
+
 <Label required>My Field</Label>
 ```
 
@@ -20,6 +24,8 @@ Apply a custom styles object to alter the look. Available elements are:
 - `required` - Required label (if present)
 
 ```
+import { Label } from "blackbox-react";
+
 var styles = {
   root: {
     color: 'green'

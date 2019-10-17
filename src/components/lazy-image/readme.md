@@ -5,6 +5,8 @@
 Pass a url to an image
 
 ```
+import { LazyImage } from "blackbox-react";
+
 <LazyImage
   url={'https://images.unsplash.com/photo-1533134957610-83185986f38b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7b7339cf658125119e20ac303b516e80&auto=format&fit=crop&w=2550&q=80'}
 />
@@ -13,6 +15,8 @@ Pass a url to an image
 With a custom size and background color
 
 ```
+import { LazyImage } from "blackbox-react";
+
 <LazyImage
   color='primary'
   styles={{ width: '100%' }}
@@ -26,6 +30,8 @@ With a custom size and background color
 With a custom loading spinner
 
 ```
+import { LazyImage } from "blackbox-react";
+
 <LazyImage
   url={'https://images.unsplash.com/photo-1533109721025-d1ae7ee7c1e1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=610919124dcd3cc1a8fbc12779531030&auto=format&fit=crop&w=1650&q=80'}
 >
@@ -36,6 +42,8 @@ With a custom loading spinner
 With lazy loading and a callback
 
 ```
+import { LazyImage } from "blackbox-react";
+
 <LazyImage
   lazy
   styles={{ height: '30em' }}

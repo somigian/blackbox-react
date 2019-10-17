@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { InputValidations } from "blackbox-react";
+
 <InputValidations
   validations={[ 'Field is required' ]}
 />
@@ -16,6 +18,8 @@ Apply a custom styles object to alter the look. Available elements are:
 - `error` - Individual error strings
 
 ```
+import { InputValidations } from "blackbox-react";
+
 var styles = {
   error: {
     padding: '1em',

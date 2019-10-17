@@ -5,6 +5,8 @@
 Pass an onChange callback to be notified of changes
 
 ```
+import { Filter } from "blackbox-react";
+
 <Filter onChange={(val) => alert(val)}/>
 ```
 
@@ -13,6 +15,8 @@ Pass an onChange callback to be notified of changes
 We can turn the debouncing off if required
 
 ```
+import { Filter } from "blackbox-react";
+
 <Filter onChange={(val) => alert(val)} debounce={false} />
 ```
 
@@ -23,6 +27,8 @@ Update the background and foreground colors
 This is useful for when the form is on a different color background already
 
 ```
+import { Filter } from "blackbox-react";
+
 <Filter
   onChange={(val) => alert(val)}
   background='primary'
@@ -39,6 +45,8 @@ Apply a custom styles object to alter the look. Available elements are:
 - `input` - The search field
 
 ```
+import { Filter } from "blackbox-react";
+
 <Filter
   onChange={(val) => alert(val)}
   styles={{

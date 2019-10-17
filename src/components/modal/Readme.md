@@ -5,7 +5,7 @@
 Example of a component that opens a modal when a button is clicked
 
 ```
-import { Button, RichText } from "blackbox-react";
+import { Button, Modal, RichText } from "blackbox-react";
 
 class ModalExample extends React.Component {
     constructor (props) {
@@ -31,9 +31,9 @@ class ModalExample extends React.Component {
             isOpen={this.state.open}
             onRequestClose={this.closeModal}
             contentLabel='Label'
-            appElement='#app'>
+            appElement='#rsg-root'>
             <RichText>
-              <h1>Everydayhero</h1>
+              <h1>Modal Title</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus.</p>
             </RichText>
           </Modal>
@@ -50,7 +50,7 @@ class ModalExample extends React.Component {
 Example using the withToggle higher order component
 
 ```
-import { Button, RichText } from "blackbox-react";
+import { Button, Modal, RichText } from "blackbox-react";
 
 const withToggle = require('../with-toggle').default;
 
@@ -61,9 +61,9 @@ const ModalExample = withToggle((props) => (
       isOpen={props.toggled}
       onRequestClose={props.onToggleOff}
       contentLabel='Label'
-      appElement='#app'>
+      appElement='#rsg-root'>
       <RichText>
-        <h1>Everydayhero</h1>
+        <h1>Modal Title</h1>
         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus.</p>
       </RichText>
     </Modal>
@@ -78,7 +78,7 @@ const ModalExample = withToggle((props) => (
 Contains some custom spacing, styles and close button
 
 ```
-import { Button, RichText, Section, Grid, GridColumn, ButtonGroup } from "blackbox-react";
+import { Button, Modal, RichText, Section, Grid, GridColumn, ButtonGroup } from "blackbox-react";
 
 const withToggle = require('../with-toggle').default;
 
@@ -98,10 +98,10 @@ const ModalExample = withToggle((props) => (
       closeIcon={false}
       styles={styles}
       contentLabel='Modal'
-      appElement='#app'>
+      appElement='#rsg-root'>
       <div>
         <Section background='primary' foreground='light'>
-          <h1>Everydayhero</h1>
+          <h1>Modal Title</h1>
         </Section>
         <Section>
           <Grid align='stretch' spacing={1}>

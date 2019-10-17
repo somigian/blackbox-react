@@ -4,7 +4,7 @@ _Example components can be found in source/components/with-form/examples_
 
 __withForm__ is a higher order component (HOC) that allows you to pass in your form configuration, and it will then inject a __form__ prop into your component.
 
-You can then use this __form__ prop, and spread them across __InputField__ or other Constructicon form fields, and it will handle all the updating and validating of your form.
+You can then use this __form__ prop, and spread them across __InputField__ or other form fields, and it will handle all the updating and validating of your form.
 
 You can then call __form.submit()__ when you want to submit your form.
 
@@ -92,7 +92,7 @@ __withForm__ will pass a __form__ prop into your component.
 <br/>
 __form.fields__
 
-You can spread the individual fields across Constructicon form components. This will pass through all the needed props to that form component, such as onChange handlers.
+You can spread the individual fields across form components. This will pass through all the needed props to that form component, such as onChange handlers.
 
 ```javascript static
 <InputField {...form.fields.username} />

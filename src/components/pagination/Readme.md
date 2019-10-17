@@ -33,6 +33,8 @@ The child function supplied to __Pagination__, will receive one argument, an obj
 # Example
 
 ```
+import { Pagination, Leaderboard, LeaderboardItem, Button, ButtonGroup } from "blackbox-react";
+
 // create some fake leaderboard data
 const leaders = new Array(15).fill({
   href: 'http://google.com',

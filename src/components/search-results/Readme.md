@@ -5,6 +5,8 @@
 Set the loading prop while your results are loading
 
 ```
+import { SearchResults } from "blackbox-react";
+
 <SearchResults loading />
 ```
 
@@ -13,6 +15,8 @@ Set the loading prop while your results are loading
 Set the error prop if there was an error loading the leaders
 
 ```
+import { SearchResults } from "blackbox-react";
+
 <SearchResults error />
 ```
 
@@ -22,6 +26,8 @@ Set the error prop if there was an error loading the leaders
 If the no leaderboard items are passed in, an empty message will be shown
 
 ```
+import { SearchResults } from "blackbox-react";
+
 <SearchResults />
 ```
 
@@ -30,6 +36,8 @@ If the no leaderboard items are passed in, an empty message will be shown
 Filled with SearchResults
 
 ```
+import { SearchResults, SearchResult, Button } from "blackbox-react";
+
 <SearchResults>
   <SearchResult
     cta='Support'

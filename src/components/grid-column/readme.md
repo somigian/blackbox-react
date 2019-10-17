@@ -5,6 +5,8 @@
 Simple main content and sidebar style grid that snaps into single column on smaller screens
 
 ```
+import { Grid, GridColumn, Section } from "blackbox-react";
+
 <Grid>
   <GridColumn xs={12} sm={8}>
     <Section background='shade'>Column 1</Section>

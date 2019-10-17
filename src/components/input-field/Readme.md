@@ -5,6 +5,8 @@
 Pass an onChange callback to be notified of changes
 
 ```
+import { InputField } from "blackbox-react";
+
 initialState = { fn: '', ln: '' };
 
 <div>
@@ -30,6 +32,8 @@ initialState = { fn: '', ln: '' };
 **Status indicator**
 
 ```
+import { InputField } from "blackbox-react";
+
 initialState = { search: '', validations: [] };
 
 handleChange = (search) => {
@@ -70,6 +74,8 @@ Apply a custom styles object to alter the look. Available elements are:
 For example:
 
 ```
+import { InputField } from "blackbox-react";
+
 initialState = { test: 'This is a value' };
 
 const styles = {

@@ -5,6 +5,8 @@
 A half filled progress bar.
 
 ```
+import { ProgressBar } from "blackbox-react";
+
 <ProgressBar
   alt='<%= progress %>% raised'
   progress={50}
@@ -16,6 +18,8 @@ A half filled progress bar.
 Uses custom colors and radiuses as specified by traits
 
 ```
+import { ProgressBar } from "blackbox-react";
+
 <ProgressBar
   alt='<%= progress %>% raised'
   progress={50}
@@ -35,6 +39,8 @@ Apply a custom styles object to alter the look. Available elements are:
 For example, using a gradient for the progress fill:
 
 ```
+import { ProgressBar } from "blackbox-react";
+
 <ProgressBar
   alt='<%= progress %>% raised'
   progress={50}

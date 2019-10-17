@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { Image } from "blackbox-react";
+
 <Image
   alt='Example Image'
   maxHeight={5}

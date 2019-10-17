@@ -29,6 +29,8 @@ light
 shade, tint, grow, shrink
 
 ```javascript static
+import { TraitsProvider, ButtonGroup, Button } from "blackbox-react";
+
 const fonts = {
   head: 'Roboto',
   body: 'Roboto'

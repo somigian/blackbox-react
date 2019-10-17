@@ -18,6 +18,8 @@ target node and some basic transforms, forward this to the root node of your
 **Standard Use**
 
 ```
+import { Tooltip } from "blackbox-react";
+
 const styles = {
   root: {
     borderRadius: '0.66em',

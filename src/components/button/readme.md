@@ -5,7 +5,7 @@
 Specify the tag or component e.g. a, button, Link etc.
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button tag='a' href='http://google.com'>Click Me</Button>
@@ -19,7 +19,7 @@ import { ButtonGroup } from "blackbox-react";
 Change the background color to one of the theme's colors
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button>Click Me</Button>
@@ -32,7 +32,7 @@ import { ButtonGroup } from "blackbox-react";
 Change the foreground color to one of the theme's colors
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button>Click Me</Button>
@@ -45,7 +45,7 @@ import { ButtonGroup } from "blackbox-react";
 Alter the font size, using a factor to be passed into the `scale` function
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button size={-1}>Click Me</Button>
@@ -60,7 +60,7 @@ import { ButtonGroup } from "blackbox-react";
 Change the padding of the button by passing in a spacing object or number
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button spacing={{ x: 1, y: 1 }}>Click Me</Button>
@@ -74,7 +74,7 @@ import { ButtonGroup } from "blackbox-react";
 Set the border width (px) and/or color to one of the theme's colors
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button borderWidth={3}>Click Me</Button>
@@ -87,7 +87,7 @@ import { ButtonGroup } from "blackbox-react";
 Border Radius
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button radius='none'>Click Me</Button>
@@ -102,7 +102,7 @@ import { ButtonGroup } from "blackbox-react";
 Specify a specific font treatment
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button>Click Me</Button>
@@ -115,7 +115,7 @@ import { ButtonGroup } from "blackbox-react";
 Set the hover effect of the button
 
 ```
-import { ButtonGroup } from "blackbox-react";
+import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
   <Button>Click Me</Button>
@@ -131,6 +131,8 @@ import { ButtonGroup } from "blackbox-react";
 Pass in custom style rules to be applied to the button
 
 ```
+import { Button } from "blackbox-react";
+
 <Button styles={{
   fontSize: '10px',
   backgroundColor: '#777'

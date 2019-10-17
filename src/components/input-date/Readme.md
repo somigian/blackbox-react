@@ -5,6 +5,8 @@
 Pass an onChange callback to be notified of changes
 
 ```
+import { InputDate } from "blackbox-react";
+
 initialState = { date: '' };
 styles = { padding: '1rem', textAlign: 'center', backgroundColor: 'whitesmoke' };
 
@@ -25,6 +27,8 @@ styles = { padding: '1rem', textAlign: 'center', backgroundColor: 'whitesmoke' }
 **Always show selects**
 
 ```
+import { InputDate } from "blackbox-react";
+
 initialState = { date: '' };
 styles = { padding: '1rem', textAlign: 'center', backgroundColor: 'whitesmoke' };
 

@@ -3,6 +3,8 @@
 **Standard Use**
 
 ```
+import { MetricGroup, Metric } from "blackbox-react";
+
 <MetricGroup>
   <Metric
     label='Target'
