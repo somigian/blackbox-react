@@ -1,7 +1,9 @@
 {
   "name": "blackbox-react",
-  "version": "1.0.5",
-  "description": "",
+  "version": "1.0.6",
+  "description": "Blackbox React Components Library",
+  "homepage": "https://somigian.github.io/blackbox-react/",
+  "repository": "https://github.com/somigian/blackbox-react",
   "main": "lib/index.js",
   "browser": "lib/index.umd.js",
   "module": "lib/index.es.js",
