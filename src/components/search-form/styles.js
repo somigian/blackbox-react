@@ -2,7 +2,7 @@ import merge from 'lodash/merge'
 
 export default (
   { toggled, expanded, styles },
-  { mediaQuery, rhythm, scale, transitions, justifyContent }
+  { mediaQuery, rhythm, colors, scale, transitions, justifyContent }
 ) => {
   const open = expanded || toggled
 
@@ -32,9 +32,18 @@ export default (
     },
 
     input: {
+      display: 'block',
+      width: '100%',
+      boxSizing: 'border-box',
+      height: rhythm(2),
+      paddingLeft: rhythm(0.5),
+      paddingRight: rhythm(1.5),
+      borderBottom: `1px solid ${colors.shade} !important`,
+      fontSize: '0.875rem',
+      borderRadius: '3px',
+      border: `solid 1px ${colors.gray03}`,
       paddingTop: rhythm(0.5),
       paddingBottom: rhythm(0.5),
-      fontSize: scale(2),
       opacity: 0,
       transition: transitions.easeOut,
       ...(open && {
@@ -48,6 +57,7 @@ export default (
       transform: `translateY(${rhythm(1)})`,
       fontSize: scale(2),
       whiteSpace: 'nowrap',
+      marginBottom: rhythm(0.5),
       transition: transitions.easeOut,
       ...(open && {
         transform: 'translateY(0)',

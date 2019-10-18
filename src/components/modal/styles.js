@@ -9,7 +9,7 @@ export default ({ spacing, styles }, { calculateSpacing, rhythm }) => {
       right: 0,
       bottom: 0,
       zIndex: 100,
-      backgroundColor: 'rgba(0, 0, 0, 0.75)'
+      backgroundColor: 'rgba(0, 0, 0, 0.5)'
     },
 
     content: {
@@ -33,14 +33,24 @@ export default ({ spacing, styles }, { calculateSpacing, rhythm }) => {
     container: {
       ...calculateSpacing(spacing),
       overflow: 'auto',
-      maxHeight: 'calc(100vh - 2rem)'
+      maxHeight: 'calc(100vh - 2rem)',
+      padding: '20px'
     },
 
     close: {
       position: 'absolute',
       zIndex: 100,
       top: rhythm(0.75),
-      right: rhythm(0.75)
+      right: rhythm(0.75),
+      border: 'none',
+      top: '20px',
+      outline: 'none'
+    },
+
+    h5:{
+      margin: '0',
+      fontWeight: '500',
+      textTransform: 'uppercase'
     }
   }
 

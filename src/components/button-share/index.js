@@ -11,6 +11,7 @@ import openShareDialog from './openShareDialog'
  */
 const ButtonShare = ({
   share,
+  text,
   type,
   url,
   title,
@@ -23,9 +24,28 @@ const ButtonShare = ({
     tag={share ? 'button' : 'a'}
     onClick={share && openShareDialog({ type, url, title, hashtags, image })}
     aria-label={type}
-    {...props}
+    {...props} 
+    styles={{
+      '&':{
+        minWidth: 'unset'
+      },
+      '& span': {
+        textTransform: 'none',
+        fontSize: '12px',
+        float: 'right',
+        marginTop: '4px',
+        marginRight: '3px !important'
+      },
+      '& svg': {
+        display: 'inline-block',
+        marginTop: '2px'
+      }
+    }}
   >
-    <Icon name={type} />
+    <Icon name={type}/>
+      {text &&
+        <span>{text}</span>
+      }
   </Button>
 )
 

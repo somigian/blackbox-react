@@ -3,11 +3,13 @@
 **Standard Use**
 
 ```
-import { InputValidations } from "blackbox-react";
+import { InputValidations, RichText } from "blackbox-react";
 
-<InputValidations
-  validations={[ 'Field is required' ]}
-/>
+<RichText>
+  <InputValidations
+    validations={[ 'Field is required' ]}
+  />
+</RichText>
 ```
 
 **Custom styles**
@@ -18,7 +20,7 @@ Apply a custom styles object to alter the look. Available elements are:
 - `error` - Individual error strings
 
 ```
-import { InputValidations } from "blackbox-react";
+import { InputValidations, RichText } from "blackbox-react";
 
 var styles = {
   error: {
@@ -28,10 +30,12 @@ var styles = {
   }
 };
 
-<InputValidations
-  styles={styles}
-  validations={[ 'Field is required' ]}
-/>
+<RichText>
+  <InputValidations
+    styles={styles}
+    validations={[ 'Field is required' ]}
+  />
+</RichText>
 ```
 
 **Treatments**

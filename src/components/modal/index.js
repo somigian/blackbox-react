@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import Icon from '../icon'
 import withStyles from '../with-styles'
+import { Section, RichText } from 'blackbox-react'
 import styles from './styles'
 
 /**
@@ -44,6 +45,7 @@ class Modal extends Component {
       children,
       closeIcon,
       classNames,
+      title,
       styles,
       ...props
     } = this.props
@@ -74,7 +76,30 @@ class Modal extends Component {
             children={closeIcon}
           />
         )}
-        <div className={classNames.container}>{children}</div>
+        <div className={classNames.container}>
+          <Section className='modal-header'>
+            <RichText styles={{
+              '& h5': {
+                margin: '0',
+                fontWeight: '500',
+                textTransform: 'uppercase'
+              }
+            }}>
+              <h5>{title}</h5>
+            </RichText>
+          </Section>
+          <Section className='modal-body'>
+            <RichText styles={{
+              '& p': {
+                fontSize: '14px',
+                fontWeight: '400',
+                marginBottom: '0'
+              }
+            }}>
+              {children}
+            </RichText>
+          </Section>
+        </div>
       </ReactModal>
     )
   }

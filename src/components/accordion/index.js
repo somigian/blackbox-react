@@ -17,7 +17,8 @@ const Accordion = ({
   onToggle,
   classNames
 }) => (
-  <div className={`c11n-accordion ${classNames.root}`}>
+  <div 
+  className={`c11n-accordion ${classNames.root}`}>
     <button
       id={`${id}-title`}
       aria-controls={`${id}-body`}
@@ -26,8 +27,8 @@ const Accordion = ({
       className={classNames.head}
       onClick={onToggle}
     >
-      <div className={classNames.toggle}>{toggled ? opened : closed}</div>
       <div className={classNames.title}>{title}</div>
+      <div className={classNames.toggle}>{toggled ? opened : closed}</div>
     </button>
     <div
       aria-labelledby={`${id}-title`}
@@ -103,8 +104,8 @@ Accordion.defaultProps = {
   border: true,
   color: 'primary',
   font: 'head',
-  opened: <Icon name='minus' />,
-  closed: <Icon name='plus' />,
+  opened: <Icon name='dropdown' rotate={180}/>,
+  closed: <Icon name='dropdown' />,
   styles: {}
 }
 

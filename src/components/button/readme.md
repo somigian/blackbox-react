@@ -8,9 +8,9 @@ Specify the tag or component e.g. a, button, Link etc.
 import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
-  <Button tag='a' href='http://google.com'>Click Me</Button>
-  <Button tag='button' onClick={() => console.log('clicked')}>Click Me</Button>
-  <Button tag='span' onClick={() => console.log('clicked')}>Click Me</Button>
+  <Button tag='a' href='http://google.com'>I'm an &lt;a&gt; tag</Button>
+  <Button tag='button' onClick={() => console.log('clicked')}>I'm a &lt;button&gt;</Button>
+  <Button tag='span' onClick={() => console.log('clicked')}>I'm a &lt;span&gt;</Button>
 </ButtonGroup>
 ```
 
@@ -22,10 +22,11 @@ Change the background color to one of the theme's colors
 import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
-  <Button>Click Me</Button>
-  <Button background='secondary'>Click Me</Button>
-  <Button background='tertiary'>Click Me</Button>
-  <Button background='dark'>Click Me</Button>
+  <Button>Default</Button>
+  <Button background='success'>Success</Button>
+  <Button background='info'>Info</Button>
+  <Button background='warning'>Warning</Button>
+  <Button background='danger'>Danger</Button>
 </ButtonGroup>
 ```
 
@@ -35,8 +36,9 @@ Change the foreground color to one of the theme's colors
 import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
-  <Button>Click Me</Button>
-  <Button foreground='dark'>Click Me</Button>
+  <Button background='light' foreground='dark'>Light</Button>
+  <Button background='dark'>Dark</Button>
+  <Button background='disabled' foreground='gray03'>Disabled</Button>
 </ButtonGroup>
 ```
 
@@ -48,10 +50,10 @@ Alter the font size, using a factor to be passed into the `scale` function
 import { ButtonGroup, Button } from "blackbox-react";
 
 <ButtonGroup>
-  <Button size={-1}>Click Me</Button>
-  <Button size={0}>Click Me</Button>
-  <Button size={1}>Click Me</Button>
-  <Button size={2}>Click Me</Button>
+  <Button size={-1}>Small</Button>
+  <Button size={0}>Default</Button>
+  <Button size={1}>Medium</Button>
+  <Button size={2}>Large</Button>
 </ButtonGroup>
 ```
 
@@ -81,6 +83,21 @@ import { ButtonGroup, Button } from "blackbox-react";
   <Button borderWidth={1}>Click Me</Button>
   <Button borderColor='shade'>Click Me</Button>
   <Button borderColor='tint'>Click Me</Button>
+</ButtonGroup>
+```
+
+**Outline**
+
+```
+import { ButtonGroup, Button } from "blackbox-react";
+
+<ButtonGroup>
+  <Button background='transparent' foreground='success' borderWidth={3} borderColor='success'>Success</Button>
+  <Button background='transparent' foreground='info' borderWidth={3} borderColor='info'>Info</Button>
+  <Button background='transparent' foreground='warning' borderWidth={3} borderColor='warning'>Warning</Button>
+  <Button background='transparent' foreground='danger' borderWidth={3} borderColor='danger'>Danger</Button>
+  <Button background='transparent' foreground='dark' borderWidth={3} borderColor='dark'>Dark</Button>
+  <Button background='transparent' foreground='disabled' borderWidth={3} borderColor='disabled'>Disabled</Button>
 </ButtonGroup>
 ```
 

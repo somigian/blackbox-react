@@ -8,10 +8,10 @@ Links to the required social profiles
 import { ButtonGroup, ButtonShare } from "blackbox-react";
 
 <ButtonGroup align='center'>
-  <ButtonShare type='facebook' href='http://facebook.com' />
-  <ButtonShare type='instagram' href='http://instagram.com' />
-  <ButtonShare type='youtube' href='http://youtube.com' />
-  <ButtonShare type='twitter' href='http://twitter.com' />
+  <ButtonShare type='facebook' href='http://facebook.com' text='Like on Facebook' />
+  <ButtonShare type='instagram' href='http://instagram.com' text='Follow us on Instagram'/>
+  <ButtonShare type='youtube' href='http://youtube.com' text='Subscribe to our Channel'/>
+  <ButtonShare type='twitter' href='http://twitter.com' text='Follow us on Twitter' />
 </ButtonGroup>
 ```
 

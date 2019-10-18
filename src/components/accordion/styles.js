@@ -7,6 +7,7 @@ export default (
   const borderStyles = border
     ? {
       paddingLeft: rhythm(0.5),
+      border: `1px solid ${colors.gray01}`,
       borderLeft: `2px solid ${toggled ? colors[color] : colors.shade}`
     }
     : {}
@@ -16,6 +17,7 @@ export default (
       position: 'relative',
       paddingTop: rhythm(0.5),
       paddingBottom: rhythm(0.5),
+      // background: colors.gray01,
       ...borderStyles
     },
 
@@ -25,6 +27,13 @@ export default (
       alignItems: 'center',
       ...justifyContent('flex-start'),
       cursor: 'pointer',
+      border: 'none',
+      outline: 'none',
+      fontSize: '1rem',
+      textAlign: 'left',
+      paddingLeft: '0',
+      //background: colors.gray01,
+      paddingRight: rhythm(gutter),
       '&:focus:after': {
         content: '""',
         position: 'absolute',
@@ -32,7 +41,7 @@ export default (
         right: 0,
         bottom: 0,
         left: 0,
-        boxShadow: `0 0 1rem ${colors.shade}`,
+        //boxShadow: `0 0 1rem ${colors.shade}`,
         pointerEvents: 'none'
       }
     },
@@ -40,20 +49,26 @@ export default (
     toggle: {
       flexBasis: rhythm(gutter),
       display: 'flex',
-      alignItems: 'flex-start',
+      alignItems: 'flex-end',
       flex: `0 0 ${rhythm(1)}`,
-      fontSize: scale(-2),
-      color: toggled ? colors[color] : colors.lightGrey
+      //color: toggled ? colors[color] : colors.lightGrey,
+      color: toggled ? colors[color] : colors.gray05,
+      position: 'absolute',
+      right: '10px',
+      fontSize: '0.875rem',
     },
 
     title: {
-      ...treatments[font]
+      ...treatments[font],
+      //fontWeight: '500 !important'
     },
 
     body: {
       display: toggled ? 'block' : 'none',
-      paddingTop: rhythm(0.5),
-      paddingLeft: rhythm(gutter)
+      padding: rhythm(0.5),
+      //paddingLeft: rhythm(gutter),
+      paddingTop: '0',
+      paddingLeft: '0',
     }
   }
 

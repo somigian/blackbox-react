@@ -43,6 +43,7 @@ export default (
       borderRadius: rhythm(radiuses[radius]),
       boxShadow: shadow && shadows[shadow],
       fontSize: scale(size),
+      minWidth: '125px',
       ...treatments[font],
       ...effects[effect],
 

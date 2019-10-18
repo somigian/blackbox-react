@@ -13,46 +13,86 @@ export const scale = (exponent = 0, scale = 1.2) =>
  * Colors
  */
 export const colors = {
-  light: '#FFFFFF',
-  dark: '#1B1C1D',
-  grey: '#767676',
-  lightGrey: '#999999',
-  paleGrey: '#f5f5f5',
-  primary: '#F2711C',
-  secondary: '#FBBD08',
-  tertiary: '#203a44',
-  shade: 'rgba(0, 0, 0, 0.125)',
-  tint: 'rgba(255, 255, 255, 0.25)',
-  transparent: 'transparent',
-  inherit: 'inherit',
-  facebook: '#3b5999',
-  twitter: '#55acee',
-  instagram: '#e4405f',
-  youtube: '#cd201f',
-  linkedin: '#0084bf',
-  google: '#dd4b39',
-  vimeo: '#1ab7ea',
-  fitbit: '#00b0b9',
-  mapmyfitness: '#004a8d',
-  strava: '#fc4c02',
-  twitch: '#6701B3',
-  slack: '#4a154b',
-  whatsapp: '#25d366',
-  pinterest: '#bd081c',
-  messenger: '#0084ff',
-  reddit: '#ff4500',
-  danger: '#DB2828',
-  success: '#5cb85c',
-  blackbaud: '#8cbe4f',
-  everydayhero: '#1bab6b',
-  justgiving: '#ad29b6'
+  light          : '#FFFFFF',
+  dark           : '#1B1C1D',
+  grey           : '#767676',
+  lightGrey      : '#999999',
+  paleGrey       : '#f5f5f5',
+  gray01         : '#f5f5f5',
+  gray02         : '#EEEEEE',
+  gray03         : '#CCCCCC',
+  gray04         : '#999999',
+  gray05         : '#767676',
+  gray06         : '#333333',
+  gray07         : '#222222',
+
+  red            : '#DB2828',
+  redBg          : '#ffc9c9',
+  redTx          : '#863d3d',
+  red30          : '#DB282830',
+  red50          : '#DB282850',
+  orange         : '#F2711C',
+  yellow         : '#FBBD08',
+  yellowBg       : '#ffe9aa',
+  yellowTx       : '#7e5f04',
+  olive          : '#B5CC18',
+  green          : '#21BA45',
+  greenBg        : '#d4edc7',
+  greenTx        : '#557445',
+  green30        : '#21BA4530',
+  green50        : '#21BA4550',
+  teal           : '#00B5AD',
+  blue           : '#2185D0',
+  blueTx         : '#31708f',
+  blueBg         : '#d9edf7',
+  violet         : '#6435C9',
+  purple         : '#A333C8',
+  pink           : '#E03997',
+  brown          : '#A5673F',
+
+  success        : '#21BA45',
+  info           : '#2185D0',
+  warning        : '#FBBD08',
+  danger         : '#DB2828',
+  disabled       : '#999999',
+
+  primary        : '#F2711C',
+  secondary      : '#FBBD08',
+  tertiary       : '#EEEEEE',
+
+  shade          : 'rgba(0, 0, 0, 0.125)',
+  tint           : 'rgba(255, 255, 255, 0.25)',
+  transparent    : 'transparent',
+  inherit        : 'inherit',
+
+  facebook       : '#3b5999',
+  twitter        : '#55acee',
+  instagram      : '#e4405f',
+  youtube        : '#cd201f',
+  linkedin       : '#0084bf',
+  google         : '#dd4b39',
+  vimeo          : '#1ab7ea',
+  fitbit         : '#00b0b9',
+  mapmyfitness   : '#004a8d',
+  strava         : '#fc4c02',
+  twitch         : '#6701B3',
+  slack          : '#4a154b',
+  whatsapp       : '#25d366',
+  pinterest      : '#bd081c',
+  messenger      : '#0084ff',
+  reddit         : '#ff4500',
+  danger         : '#DB2828',
+  success        : '#5cb85c',
+  blackbaud      : '#8cbe4f',
+  everydayhero   : '#1bab6b',
+  justgiving     : '#ad29b6'
 }
 
 /**
  * Fonts
  */
 export const fonts = {
-  head: '"Open Sans", sans-serif',
+  head: "'Raleway', 'Helvetica', 'sans-serif'",
   body: "'Raleway', 'Helvetica', 'sans-serif'"
 }
 
@@ -71,10 +111,22 @@ export const treatments = {
   button: {
     fontFamily: fonts.head,
     textTransform: 'uppercase',
-    fontWeight: 700
+    fontWeight: 500,
+    paddingTop: rhythm(0.35),
+    paddingBottom: rhythm(0.35)
   },
   input: {
-    fontFamily: fonts.body
+    boxSizing: 'border-box',
+    fontFamily: fonts.body,
+    fontSize: '1rem',
+    borderRadius: '3px',
+    border: `solid 1px ${colors.gray03}`
+  },
+  select: {
+    fontFamily: fonts.body,
+    fontSize: '1rem',
+    borderRadius: '3px',
+    border: `solid 1px ${colors.gray03}`
   },
   container: {
     maxWidth: rhythm(40)
