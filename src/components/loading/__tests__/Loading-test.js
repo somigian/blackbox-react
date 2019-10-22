@@ -1,4 +1,4 @@
-import Loading from '..'
+import { Loading } from '..'
 import { css } from '../../../lib/css'
 import { rhythm, colors } from '../../../lib/traits'
 

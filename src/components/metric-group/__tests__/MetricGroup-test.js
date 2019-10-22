@@ -1,4 +1,4 @@
-import MetricGroup from '..'
+import { MetricGroup } from '..'
 import Metric from '../../metric'
 import { css } from '../../../lib/css'
 

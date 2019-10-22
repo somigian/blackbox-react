@@ -1,4 +1,4 @@
-import TraitsProvider from '..'
+import { TraitsProvider } from '..'
 import Button from '../../button'
 import { css } from '../../../lib/css'
 

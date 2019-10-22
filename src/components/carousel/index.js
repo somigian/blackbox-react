@@ -48,7 +48,7 @@ const Carousel = ({ children, classNames, ...props }) => {
     'vertical'
   ]
 
-  const allowedProps = pick(props, propsWhitelist)
+  const allowedProps = pick(props, propsWhitelist.forEach((e) => { return e }))
 
   return (
     <div className={`c11n-carousel ${classNames.root}`}>

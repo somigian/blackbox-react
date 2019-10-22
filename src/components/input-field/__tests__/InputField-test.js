@@ -1,4 +1,4 @@
-import InputField from '..'
+import { InputField } from '..'
 
 describe('InputField', () => {
   it('should render a simple input field', () => {

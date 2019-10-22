@@ -1,4 +1,4 @@
-import ProgressBar from '..'
+import { ProgressBar } from '..'
 import { css } from '../../../lib/css'
 
 import {

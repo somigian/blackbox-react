@@ -1,4 +1,4 @@
-import withForm from '..'
+import { withForm } from '..'
 import InputField from '../../input-field'
 import * as validators from '../../../lib/validators'
 

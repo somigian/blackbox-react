@@ -1,6 +1,6 @@
-import InputSelect from '..'
+import { InputSelect } from '..'
 
-describe('<InputSelect', () => {
+describe('InputSelect', () => {
   const testOptions = [
     { value: 'val-1', label: 'Value 1' },
     { value: 'val-2', label: 'Value 2' },

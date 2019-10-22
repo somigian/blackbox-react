@@ -1,4 +1,4 @@
-import ButtonShare from '..'
+import { ButtonShare } from '..'
 import { css } from '../../../lib/css'
 import { colors } from '../../../lib/traits'
 

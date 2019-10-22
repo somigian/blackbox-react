@@ -1,4 +1,4 @@
-import Modal from '..'
+import { Modal } from '..'
 
 /*
   Difficult to test modal itself as it is mounted as a portal component outside the scope

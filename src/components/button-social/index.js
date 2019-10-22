@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonShare from '../button-share'
+import ButtonShare  from '../button-share'
 
 export default props => {
   console.log(

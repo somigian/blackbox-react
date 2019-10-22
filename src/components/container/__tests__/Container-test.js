@@ -1,4 +1,4 @@
-import Container from '..'
+import { Container } from '..'
 import { css } from '../../../lib/css'
 import { shadows } from '../../../lib/traits'
 

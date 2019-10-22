@@ -1,4 +1,4 @@
-import Meta from '..'
+import { Meta } from '..'
 
 describe('Meta', () => {
   it('renders a simple meta component', () => {

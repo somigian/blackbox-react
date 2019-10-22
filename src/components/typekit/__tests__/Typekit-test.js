@@ -1,4 +1,4 @@
-import Typekit from '..'
+import { Typekit } from '..'
 
 describe('Typekit', () => {
   const getMountedElement = el => utils.getMountedElement(el, 'script')

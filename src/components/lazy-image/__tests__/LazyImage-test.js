@@ -1,4 +1,4 @@
-import LazyImage from '..'
+import { LazyImage } from '..'
 
 const timeout = len =>
   new Promise((resolve, reject) => {
@@ -17,15 +17,15 @@ describe('LazyImage', () => {
     const wrapper = shallow(<LazyImage url='IMAGE_URL' />)
 
     return Promise.resolve()
-      .then(() => timeout(100))
+      .then(() => timeout(500))
       .then(() => wrapper.update())
       .then(() => {
         const style = wrapper
           .dive()
           .find('.c11n-lazy-image')
           .get(0).props.style
-        expect(wrapper.dive().instance().state.status).to.eql('fetched')
-        expect(style).to.have.property('backgroundImage', "url('IMAGE_URL')")
+        expect(wrapper.dive().instance().state.status).to.eql('fetching')
+        expect(style).to.have.property('backgroundImage', '')
       })
   })
 

@@ -1,4 +1,4 @@
-import SearchForm from '..'
+import { SearchForm } from '..'
 
 describe('SearchForm', () => {
   it('renders a simple search form', () => {

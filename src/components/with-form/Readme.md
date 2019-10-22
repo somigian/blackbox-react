@@ -107,7 +107,7 @@ You can call form.updateValues() which can update the values of fields from outs
 Values can be updated in the format below:
 
 ```javascript static
-componentWillReceiveProps (nextProps) {
+componentDidUpdate (nextProps) {
   const { testValue } = nextProps
   if (testValue !=== this.props.testValue)
     this.props.form.updateValues({

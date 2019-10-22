@@ -1,4 +1,4 @@
-import Image from '..'
+import { Image } from '..'
 
 describe('Image', () => {
   it('should render an image', () => {

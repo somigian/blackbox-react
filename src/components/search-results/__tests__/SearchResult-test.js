@@ -1,4 +1,4 @@
-import SearchResults from '..'
+import { SearchResults } from '..'
 import SearchResult from '../../search-result'
 
 describe('SearchResult', () => {

@@ -1,4 +1,4 @@
-import Flippy from '..'
+import { Flippy } from '..'
 import { css } from '../../../lib/css'
 import { colors } from '../../../lib/traits'
 

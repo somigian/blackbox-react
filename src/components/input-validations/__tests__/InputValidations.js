@@ -1,4 +1,4 @@
-import InputValidations from '..'
+import { InputValidations } from '..'
 
 describe('InputValidations', () => {
   it('should render validations', () => {

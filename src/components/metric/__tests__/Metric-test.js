@@ -1,4 +1,4 @@
-import Metric from '..'
+import { Metric } from '..'
 import * as icons from '../../icon/icons.js'
 
 describe('Metric', () => {

@@ -36,7 +36,7 @@ class LazyImage extends React.Component {
     }
   }
 
-  componentWillReceiveProps ({ url, lazy }) {
+  componentDidUpdate ({ url, lazy }) {
     if (lazy !== this.props.lazy) {
       console.error('The lazy prop on <LazyImage /> should never change')
     } else if (url !== this.props.url) {

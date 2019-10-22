@@ -1,4 +1,4 @@
-import Label from '..'
+import { Label } from '..'
 
 describe('Label', () => {
   it('should render a label', () => {

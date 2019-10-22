@@ -1,4 +1,4 @@
-import withStyles from '..'
+import { withStyles } from '..'
 
 describe('withStyles', () => {
   const Component = props => <div />

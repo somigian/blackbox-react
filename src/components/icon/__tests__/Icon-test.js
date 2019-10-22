@@ -1,4 +1,4 @@
-import Icon from '..'
+import { Icon } from '..'
 import * as icons from '../icons'
 import { css } from '../../../lib/css'
 import { colors } from '../../../lib/traits'

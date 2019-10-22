@@ -1,4 +1,4 @@
-import InputFile from '..'
+import { InputFile } from '..'
 
 describe('InputFile', () => {
   it('should render a simple input field', () => {

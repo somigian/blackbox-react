@@ -15,7 +15,7 @@ export default class Pagination extends Component {
     this.handlePagintionClick = this.handlePaginationClick.bind(this)
   }
 
-  componentWillReceiveProps ({ toPaginate }) {
+  UNSAFE_componentWillReceiveProps ({ toPaginate }) {
     if (this.props.persistPage) {
       this.setState({
         allPages: this.paginate(toPaginate)

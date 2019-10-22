@@ -1,7 +1,6 @@
-import Accordion from '..'
+import { Accordion } from '..'
 import { css } from '../../../lib/css'
 import { colors } from '../../../lib/traits'
-import { mount } from 'enzyme'
 
 describe('Accordion', () => {
   it('should render a simple accordion', () => {

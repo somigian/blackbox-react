@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactModal from 'react-modal'
 import Icon from '../icon'
+import Section from '../section'
+import RichText from '../rich-text'
 import withStyles from '../with-styles'
-import { Section, RichText } from 'blackbox-react'
 import styles from './styles'
 
 /**
@@ -20,7 +21,7 @@ class Modal extends Component {
     this.calculateDocumentScroll(this.props)
   }
 
-  componentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     if (nextProps.isOpen !== this.props.isOpen) {
       this.calculateDocumentScroll(nextProps)
     }
@@ -168,7 +169,7 @@ Modal.propTypes = {
 }
 
 Modal.defaultProps = {
-  appElement: '#mount',
+  appElement: '.ReactModalPortal',
   closeIcon: <Icon name='close' />,
   shouldCloseOnOverlayClick: true,
   spacing: 1,

@@ -1,4 +1,4 @@
-import Leaderboard from '..'
+import { Leaderboard } from '..'
 import LeaderboardItem from '../../leaderboard-item'
 
 describe('Leaderboard', () => {

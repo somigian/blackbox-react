@@ -1,4 +1,4 @@
-import Heading from '..'
+import { Heading } from '..'
 import { css } from '../../../lib/css'
 
 describe('Heading', () => {

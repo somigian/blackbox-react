@@ -1,4 +1,4 @@
-import Filter from '..'
+import { Filter } from '..'
 
 describe('Filter', () => {
   it('should render a simple filter field', () => {

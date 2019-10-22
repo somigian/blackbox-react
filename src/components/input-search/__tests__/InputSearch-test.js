@@ -1,4 +1,4 @@
-import InputSearch from '..'
+import { InputSearch } from '..'
 
 describe('InputSearch', () => {
   it('fires the onSearch callback when values are user searches', done => {

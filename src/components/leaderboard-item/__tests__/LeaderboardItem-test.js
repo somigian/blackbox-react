@@ -1,4 +1,4 @@
-import LeaderboardItem from '../../leaderboard-item'
+import { LeaderboardItem } from '..'
 
 describe('LeaderboardItem', () => {
   it('should render a simple leaderboard item', () => {

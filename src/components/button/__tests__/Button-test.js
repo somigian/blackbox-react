@@ -1,4 +1,4 @@
-import Button from '..'
+import { Button } from '..'
 import { css } from '../../../lib/css'
 
 import {

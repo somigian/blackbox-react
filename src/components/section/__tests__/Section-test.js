@@ -1,4 +1,4 @@
-import Section from '..'
+import { Section } from '..'
 import { css } from '../../../lib/css'
 import { colors, rhythm, radiuses } from '../../../lib/traits'
 

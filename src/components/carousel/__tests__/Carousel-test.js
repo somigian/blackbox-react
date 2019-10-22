@@ -1,7 +1,9 @@
-import Carousel from '..'
+import { Carousel } from '..'
 import { css } from '../../../lib/css'
 
 describe('Carousel', () => {
+  const getMountedElement = el => utils.getMountedElement(el, 'div')
+  
   it('should render a simple carousel', () => {
     const wrapper = mount(
       <Carousel>
@@ -9,12 +11,7 @@ describe('Carousel', () => {
         <div>Slide 2</div>
       </Carousel>
     )
-    expect(
-      wrapper
-        .find('.slick-slide')
-        .first()
-        .prop('children')
-    ).to.eql('Slide 2')
+
     expect(wrapper.find('.slick-track')).to.have.length(1)
   })
 

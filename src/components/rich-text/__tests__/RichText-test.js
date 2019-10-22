@@ -1,4 +1,4 @@
-import RichText from '..'
+import { RichText } from '..'
 import { css } from '../../../lib/css'
 
 describe('RichText', () => {

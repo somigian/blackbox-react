@@ -1,4 +1,4 @@
-import SearchResult from '..'
+import { SearchResult } from '..'
 import Button from '../../button'
 
 describe('SearchResult', () => {

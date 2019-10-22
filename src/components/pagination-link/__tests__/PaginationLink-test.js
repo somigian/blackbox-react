@@ -1,4 +1,4 @@
-import PaginationLink from '..'
+import { PaginationLink } from '..'
 import { css } from '../../../lib/css'
 
 describe('PaginationLink', () => {

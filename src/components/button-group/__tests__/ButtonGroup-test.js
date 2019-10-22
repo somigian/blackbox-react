@@ -1,4 +1,4 @@
-import ButtonGroup from '..'
+import { ButtonGroup } from '..'
 import Button from '../../button'
 import { css } from '../../../lib/css'
 
@@ -6,10 +6,10 @@ describe('Button Group', () => {
   const getMountedElement = el => utils.getMountedElement(el, 'div')
 
   it('should render a button group', () => {
-    const wrapper = mount(
+    const wrapper = getMountedElement(
       <ButtonGroup>
-        <Button>Button 1</Button>
-        <Button>Button 2</Button>
+        <Button tag='button'>Button 1</Button>
+        <Button tag='button'>Button 2</Button>
       </ButtonGroup>
     )
     expect(wrapper.find('button')).to.have.length(2)

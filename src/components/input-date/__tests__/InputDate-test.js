@@ -1,4 +1,4 @@
-import InputDate from '..'
+import { InputDate } from '..'
 
 describe('InputDate', () => {
   it('should render a simple input field', () => {

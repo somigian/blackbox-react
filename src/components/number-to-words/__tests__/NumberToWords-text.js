@@ -1,4 +1,4 @@
-import NumberToWords from '..'
+import { NumberToWords } from '..'
 
 const numbers = [
   {
